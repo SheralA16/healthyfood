@@ -139,6 +139,29 @@ const btnVolverRecetas =
     document.getElementById("btn-volver-recetas");
 
 
+// ------------------------------------------------------------
+// INFORMACIÓN NUTRICIONAL
+// ------------------------------------------------------------
+
+const detallePorcion =
+    document.getElementById("detalle-porcion");
+
+const detalleCalorias =
+    document.getElementById("detalle-calorias");
+
+const detalleProteinas =
+    document.getElementById("detalle-proteinas");
+
+const detalleCarbohidratos =
+    document.getElementById("detalle-carbohidratos");
+
+const detalleGrasas =
+    document.getElementById("detalle-grasas");
+
+const detalleFibra =
+    document.getElementById("detalle-fibra");
+
+
 // ============================================================
 // 7. RETOS
 // ============================================================
@@ -2372,6 +2395,130 @@ function mostrarDetalleReceta(
 
         detalleDificultad.textContent =
             receta.dificultad || "";
+
+    }
+
+
+    // --------------------------------------------------------
+    // INFORMACIÓN NUTRICIONAL
+    // --------------------------------------------------------
+
+    if (receta.nutricion) {
+
+        if (detallePorcion) {
+
+            detallePorcion.textContent =
+                receta.nutricion.porcion ||
+                "Por porción";
+
+        }
+
+
+        if (detalleCalorias) {
+
+            detalleCalorias.textContent =
+                Number(
+                    receta.nutricion.calorias || 0
+                ) +
+                " kcal";
+
+        }
+
+
+        if (detalleProteinas) {
+
+            detalleProteinas.textContent =
+                Number(
+                    receta.nutricion.proteinas || 0
+                ) +
+                " g";
+
+        }
+
+
+        if (detalleCarbohidratos) {
+
+            detalleCarbohidratos.textContent =
+                Number(
+                    receta.nutricion.carbohidratos || 0
+                ) +
+                " g";
+
+        }
+
+
+        if (detalleGrasas) {
+
+            detalleGrasas.textContent =
+                Number(
+                    receta.nutricion.grasas || 0
+                ) +
+                " g";
+
+        }
+
+
+        if (detalleFibra) {
+
+            detalleFibra.textContent =
+                Number(
+                    receta.nutricion.fibra || 0
+                ) +
+                " g";
+
+        }
+
+    } else {
+
+        // Si alguna receta todavía no tiene
+        // información nutricional, mostramos 0.
+
+        if (detallePorcion) {
+
+            detallePorcion.textContent =
+                "Por porción";
+
+        }
+
+
+        if (detalleCalorias) {
+
+            detalleCalorias.textContent =
+                "0 kcal";
+
+        }
+
+
+        if (detalleProteinas) {
+
+            detalleProteinas.textContent =
+                "0 g";
+
+        }
+
+
+        if (detalleCarbohidratos) {
+
+            detalleCarbohidratos.textContent =
+                "0 g";
+
+        }
+
+
+        if (detalleGrasas) {
+
+            detalleGrasas.textContent =
+                "0 g";
+
+        }
+
+
+        if (detalleFibra) {
+
+            detalleFibra.textContent =
+                "0 g";
+
+        }
 
     }
 

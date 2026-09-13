@@ -1,9 +1,13 @@
 /* =========================================================
    NUTRIGO - BASE DE DATOS FICTICIA DE RECETAS
+   =========================================================
+   
+   Los valores nutricionales son estimados por porción.
+   Pueden variar según los ingredientes, marcas, cantidades
+   y métodos de preparación utilizados.
    ========================================================= */
 
 const recetas = [
-
     {
         id: 1,
         nombre: "Bowl de pollo y verduras",
@@ -11,6 +15,15 @@ const recetas = [
         tiempo: 25,
         precio: 9,
         dificultad: "Fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 470,
+            proteinas: 42,
+            carbohidratos: 44,
+            grasas: 14,
+            fibra: 6
+        },
 
         ingredientes: [
             "150 g de pechuga de pollo",
@@ -32,12 +45,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "pollo",
-            "verduras",
-            "almuerzo",
-            "saludable"
-        ]
+        tags: ["pollo", "verduras", "almuerzo", "saludable"]
     },
 
 
@@ -48,6 +56,15 @@ const recetas = [
         tiempo: 15,
         precio: 8,
         dificultad: "Fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 330,
+            proteinas: 34,
+            carbohidratos: 13,
+            grasas: 16,
+            fibra: 5
+        },
 
         ingredientes: [
             "120 g de pollo cocido",
@@ -69,12 +86,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "pollo",
-            "verduras",
-            "ensalada",
-            "rápido"
-        ]
+        tags: ["pollo", "verduras", "ensalada", "rápido"]
     },
 
 
@@ -85,6 +97,15 @@ const recetas = [
         tiempo: 30,
         precio: 14,
         dificultad: "Fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 350,
+            proteinas: 35,
+            carbohidratos: 28,
+            grasas: 11,
+            fibra: 5
+        },
 
         ingredientes: [
             "150 g de filete de pescado",
@@ -106,11 +127,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "pescado",
-            "verduras",
-            "almuerzo"
-        ]
+        tags: ["pescado", "verduras", "almuerzo"]
     },
 
 
@@ -121,6 +138,15 @@ const recetas = [
         tiempo: 15,
         precio: 6,
         dificultad: "Fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 250,
+            proteinas: 15,
+            carbohidratos: 8,
+            grasas: 17,
+            fibra: 3
+        },
 
         ingredientes: [
             "2 huevos",
@@ -141,12 +167,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "huevos",
-            "verduras",
-            "desayuno",
-            "rápido"
-        ]
+        tags: ["huevos", "verduras", "desayuno", "rápido"]
     },
 
 
@@ -157,6 +178,15 @@ const recetas = [
         tiempo: 10,
         precio: 5,
         dificultad: "Muy fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 300,
+            proteinas: 7,
+            carbohidratos: 58,
+            grasas: 6,
+            fibra: 8
+        },
 
         ingredientes: [
             "1/2 taza de avena",
@@ -176,12 +206,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "frutas",
-            "desayuno",
-            "rápido",
-            "avena"
-        ]
+        tags: ["frutas", "desayuno", "rápido", "avena"]
     },
 
 
@@ -192,6 +217,15 @@ const recetas = [
         tiempo: 35,
         precio: 7,
         dificultad: "Media",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 330,
+            proteinas: 18,
+            carbohidratos: 50,
+            grasas: 6,
+            fibra: 15
+        },
 
         ingredientes: [
             "1 taza de lentejas",
@@ -213,12 +247,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "legumbres",
-            "verduras",
-            "almuerzo",
-            "económico"
-        ]
+        tags: ["legumbres", "verduras", "almuerzo", "económico"]
     },
 
 
@@ -229,6 +258,15 @@ const recetas = [
         tiempo: 15,
         precio: 9,
         dificultad: "Fácil",
+
+        nutricion: {
+            porcion: "1 wrap",
+            calorias: 390,
+            proteinas: 30,
+            carbohidratos: 35,
+            grasas: 15,
+            fibra: 6
+        },
 
         ingredientes: [
             "1 tortilla integral",
@@ -249,12 +287,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "pollo",
-            "verduras",
-            "cena",
-            "rápido"
-        ]
+        tags: ["pollo", "verduras", "cena", "rápido"]
     },
 
 
@@ -265,6 +298,15 @@ const recetas = [
         tiempo: 20,
         precio: 6,
         dificultad: "Fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 350,
+            proteinas: 14,
+            carbohidratos: 50,
+            grasas: 10,
+            fibra: 4
+        },
 
         ingredientes: [
             "1 taza de arroz cocido",
@@ -285,11 +327,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "huevos",
-            "verduras",
-            "económico"
-        ]
+        tags: ["huevos", "verduras", "económico"]
     },
 
 
@@ -300,6 +338,15 @@ const recetas = [
         tiempo: 15,
         precio: 7,
         dificultad: "Muy fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 320,
+            proteinas: 12,
+            carbohidratos: 44,
+            grasas: 11,
+            fibra: 11
+        },
 
         ingredientes: [
             "1 taza de garbanzos cocidos",
@@ -320,12 +367,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "legumbres",
-            "verduras",
-            "ensalada",
-            "económico"
-        ]
+        tags: ["legumbres", "verduras", "ensalada", "económico"]
     },
 
 
@@ -336,6 +378,15 @@ const recetas = [
         tiempo: 30,
         precio: 6,
         dificultad: "Fácil",
+
+        nutricion: {
+            porcion: "1 plato",
+            calorias: 190,
+            proteinas: 5,
+            carbohidratos: 32,
+            grasas: 5,
+            fibra: 7
+        },
 
         ingredientes: [
             "Papa",
@@ -357,11 +408,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "verduras",
-            "cena",
-            "económico"
-        ]
+        tags: ["verduras", "cena", "económico"]
     },
 
 
@@ -372,6 +419,15 @@ const recetas = [
         tiempo: 30,
         precio: 11,
         dificultad: "Media",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 510,
+            proteinas: 38,
+            carbohidratos: 59,
+            grasas: 14,
+            fibra: 8
+        },
 
         ingredientes: [
             "100 g de pasta integral",
@@ -392,11 +448,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "pollo",
-            "almuerzo",
-            "pasta"
-        ]
+        tags: ["pollo", "almuerzo", "pasta"]
     },
 
 
@@ -407,6 +459,15 @@ const recetas = [
         tiempo: 20,
         precio: 10,
         dificultad: "Fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 300,
+            proteinas: 43,
+            carbohidratos: 8,
+            grasas: 10,
+            fibra: 3
+        },
 
         ingredientes: [
             "150 g de pechuga de pollo",
@@ -427,11 +488,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "pollo",
-            "verduras",
-            "almuerzo"
-        ]
+        tags: ["pollo", "verduras", "almuerzo"]
     },
 
 
@@ -442,6 +499,15 @@ const recetas = [
         tiempo: 5,
         precio: 5,
         dificultad: "Muy fácil",
+
+        nutricion: {
+            porcion: "1 vaso",
+            calorias: 180,
+            proteinas: 2,
+            carbohidratos: 43,
+            grasas: 1,
+            fibra: 5
+        },
 
         ingredientes: [
             "1 plátano",
@@ -459,11 +525,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1502741224143-90386d7f8c82?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "frutas",
-            "bebida",
-            "rápido"
-        ]
+        tags: ["frutas", "bebida", "rápido"]
     },
 
 
@@ -474,6 +536,15 @@ const recetas = [
         tiempo: 10,
         precio: 7,
         dificultad: "Muy fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 310,
+            proteinas: 12,
+            carbohidratos: 27,
+            grasas: 18,
+            fibra: 7
+        },
 
         ingredientes: [
             "2 tostadas integrales",
@@ -493,11 +564,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "huevos",
-            "desayuno",
-            "rápido"
-        ]
+        tags: ["huevos", "desayuno", "rápido"]
     },
 
 
@@ -508,6 +575,15 @@ const recetas = [
         tiempo: 25,
         precio: 9,
         dificultad: "Fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 330,
+            proteinas: 11,
+            carbohidratos: 48,
+            grasas: 10,
+            fibra: 7
+        },
 
         ingredientes: [
             "1 taza de quinua",
@@ -528,11 +604,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "verduras",
-            "almuerzo",
-            "quinua"
-        ]
+        tags: ["verduras", "almuerzo", "quinua"]
     },
 
 
@@ -543,6 +615,15 @@ const recetas = [
         tiempo: 20,
         precio: 13,
         dificultad: "Fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 290,
+            proteinas: 34,
+            carbohidratos: 8,
+            grasas: 13,
+            fibra: 3
+        },
 
         ingredientes: [
             "150 g de pescado",
@@ -562,11 +643,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "pescado",
-            "verduras",
-            "cena"
-        ]
+        tags: ["pescado", "verduras", "cena"]
     },
 
 
@@ -577,6 +654,15 @@ const recetas = [
         tiempo: 10,
         precio: 6,
         dificultad: "Muy fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 190,
+            proteinas: 2,
+            carbohidratos: 46,
+            grasas: 1,
+            fibra: 7
+        },
 
         ingredientes: [
             "Plátano",
@@ -596,11 +682,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "frutas",
-            "postre",
-            "rápido"
-        ]
+        tags: ["frutas", "postre", "rápido"]
     },
 
 
@@ -611,6 +693,15 @@ const recetas = [
         tiempo: 40,
         precio: 8,
         dificultad: "Media",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 370,
+            proteinas: 15,
+            carbohidratos: 57,
+            grasas: 9,
+            fibra: 13
+        },
 
         ingredientes: [
             "1 taza de garbanzos",
@@ -632,12 +723,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "legumbres",
-            "verduras",
-            "almuerzo",
-            "económico"
-        ]
+        tags: ["legumbres", "verduras", "almuerzo", "económico"]
     },
 
 
@@ -648,6 +734,15 @@ const recetas = [
         tiempo: 15,
         precio: 8,
         dificultad: "Muy fácil",
+
+        nutricion: {
+            porcion: "1 sándwich",
+            calorias: 360,
+            proteinas: 29,
+            carbohidratos: 34,
+            grasas: 12,
+            fibra: 6
+        },
 
         ingredientes: [
             "2 rebanadas de pan integral",
@@ -667,12 +762,7 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "pollo",
-            "verduras",
-            "cena",
-            "rápido"
-        ]
+        tags: ["pollo", "verduras", "cena", "rápido"]
     },
 
 
@@ -683,6 +773,15 @@ const recetas = [
         tiempo: 12,
         precio: 6,
         dificultad: "Muy fácil",
+
+        nutricion: {
+            porcion: "1 porción",
+            calorias: 240,
+            proteinas: 14,
+            carbohidratos: 15,
+            grasas: 15,
+            fibra: 5
+        },
 
         ingredientes: [
             "2 huevos",
@@ -703,14 +802,8 @@ const recetas = [
 
         imagen: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
 
-        tags: [
-            "huevos",
-            "verduras",
-            "cena",
-            "rápido"
-        ]
+        tags: ["huevos", "verduras", "cena", "rápido"]
     }
-
 ];
 
 
@@ -719,16 +812,13 @@ const recetas = [
    ========================================================= */
 
 function obtenerRecetaPorId(id) {
-
     return recetas.find(function (receta) {
         return receta.id === Number(id);
     });
-
 }
 
 
 function obtenerFavoritos() {
-
     const favoritosGuardados =
         localStorage.getItem("nutrigoFavoritos");
 
@@ -737,31 +827,25 @@ function obtenerFavoritos() {
     }
 
     return JSON.parse(favoritosGuardados);
-
 }
 
 
 function guardarFavoritos(favoritos) {
-
     localStorage.setItem(
         "nutrigoFavoritos",
         JSON.stringify(favoritos)
     );
-
 }
 
 
 function esFavorito(id) {
-
     const favoritos = obtenerFavoritos();
 
     return favoritos.includes(Number(id));
-
 }
 
 
 function alternarFavorito(id) {
-
     id = Number(id);
 
     let favoritos = obtenerFavoritos();
@@ -781,5 +865,4 @@ function alternarFavorito(id) {
     guardarFavoritos(favoritos);
 
     return favoritos.includes(id);
-
 }
