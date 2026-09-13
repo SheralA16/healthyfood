@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Healthy food | Vida Sana, Futuro Seguro
+    </title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         ENCABEZADO
+    ====================================================== -->
+
+    <header class="encabezado">
+
+        <div class="contenedor-web encabezado-contenido">
+
+
+            <!-- LOGO -->
+
+            <button id="logo-inicio" class="logo" type="button">
+
+                🌿 Healthy food
+
+            </button>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav class="navegacion">
+
+                <button id="nav-inicio" type="button" class="nav-link activo">
+                    Inicio
+                </button>
+
+                <button id="nav-recetas" type="button" class="nav-link">
+                    🍽️ Recetas
+                </button>
+
+                <button id="nav-retos" type="button" class="nav-link">
+                    🏆 Retos
+                </button>
+
+                <button id="nav-progreso" type="button" class="nav-link">
+                    📊 Progreso
+                </button>
+
+                <button id="nav-mas" type="button" class="nav-link">
+                    Más
+                </button>
+
+            </nav>
+
+
+            <!-- LOGIN / CERRAR SESIÓN -->
+
+            <button id="btn-login-header" class="btn-login-header" type="button">
+                Iniciar sesión
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             INICIO
+        ================================================== -->
+
+        <section id="pantalla-inicio" class="pantalla activa">
+
+            <!-- HERO -->
+
+            <section class="hero">
+
+                <div class="contenedor-web hero-contenido">
+
+
+                    <!-- IMAGEN -->
+
+                    <div class="hero-imagen">
+
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1000&q=80"
+                            alt="Alimentación saludable">
+
+                    </div>
+
+
+                    <!-- TEXTO -->
+
+                    <div class="hero-texto">
+
+                        <span class="mini-etiqueta">
+                            🌿 Healthy food
+                        </span>
+
+                        <h1>
+                            Vida Sana,
+                            <br>
+                            Futuro Seguro
+                        </h1>
+
+                        <p class="hero-subtitulo">
+                            Pequeños cambios,
+                            grandes resultados
+                        </p>
+
+                        <p>
+                            Descubre recetas saludables,
+                            retos y recomendaciones
+                            adaptadas a tus preferencias.
+                        </p>
+
+
+                        <div class="hero-botones">
+
+                            <button id="btn-comenzar" class="btn-principal" type="button">
+                                Comenzar
+                            </button>
+
+                            <button id="btn-login-hero" class="btn-secundario" type="button">
+                                Iniciar sesión
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- BENEFICIOS -->
+
+            <section id="beneficios-inicio" class="beneficios">
+                <div class="contenedor-web">
+                    <h2>Tu alimentación, más fácil</h2>
+                    <p>Herramientas sencillas para ayudarte a construir hábitos saludables.</p>
+
+                    <div class="grid-beneficios">
+
+                        <article class="tarjeta-beneficio">
+                            <div class="icono-beneficio">🍽️</div>
+                            <h3>Recetas saludables</h3>
+                            <p>Encuentra recetas fáciles, saludables y adaptadas a tu día.</p>
+                        </article>
+
+                        <article class="tarjeta-beneficio">
+                            <div class="icono-beneficio">🏆</div>
+                            <h3>Retos saludables</h3>
+                            <p>Completa pequeños retos para mejorar tus hábitos.</p>
+                        </article>
+
+                        <article class="tarjeta-beneficio">
+                            <div class="icono-beneficio">📊</div>
+                            <h3>Progreso</h3>
+                            <p>Observa cómo avanzas semana a semana.</p>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- =================================================
+                 RECOMENDACIONES PERSONALIZADAS
+            ================================================== -->
+
+            <section id="recomendaciones-usuario" class="recomendaciones-usuario" style="display: none;">
+
+                <div class="contenedor-web">
+
+
+                    <div class="pagina-cabecera">
+
+                        <span class="mini-etiqueta">
+                            🍽️ Recomendado para ti
+                        </span>
+
+                        <h2>
+                            Recetas según tus preferencias
+                        </h2>
+
+                        <p id="texto-recomendaciones">
+                            Seleccionamos recetas pensando en ti.
+                        </p>
+
+                    </div>
+
+
+                    <div id="grid-recomendaciones" class="grid-recetas"></div>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             REGISTRO / PERFIL
+        ================================================== -->
+
+        <section id="pantalla-perfil" class="pantalla">
+
+            <div class="contenedor-web">
+
+
+                <div class="pagina-cabecera">
+
+                    <span class="mini-etiqueta">
+                        🌿 Healthy food
+                    </span>
+
+                    <h1>
+                        Crea tu perfil
+                    </h1>
+
+                    <p>
+                        Completa tus datos para
+                        personalizar tu experiencia.
+                    </p>
+
+                </div>
+
+
+
+                <div class="formulario-contenedor">
+
+
+                    <div class="avatar-formulario">
+                        👨🏻
+                    </div>
+
+
+                    <form id="formulario-perfil">
+
+
+                        <!-- DATOS PERSONALES -->
+
+                        <div class="grupo-formulario">
+
+                            <label for="nombre">
+                                Nombre
+                            </label>
+
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                        </div>
+
+
+
+                        <div class="fila-formulario">
+
+
+                            <div class="grupo-formulario">
+
+                                <label for="edad">
+                                    Edad
+                                </label>
+
+                                <input type="number" id="edad" name="edad" placeholder="Ej. 24" min="1" required>
+
+                            </div>
+
+
+                            <div class="grupo-formulario">
+
+                                <label for="peso">
+                                    Peso (kg)
+                                </label>
+
+                                <input type="number" id="peso" name="peso" placeholder="Ej. 70" min="1" step="0.1"
+                                    required>
+
+                            </div>
+
+
+                            <div class="grupo-formulario">
+
+                                <label for="altura">
+                                    Altura (cm)
+                                </label>
+
+                                <input type="number" id="altura" name="altura" placeholder="Ej. 175" min="1" required>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- CUENTA -->
+
+                        <div class="fila-formulario">
+
+
+                            <div class="grupo-formulario">
+
+                                <label for="email">
+                                    Correo electrónico
+                                </label>
+
+                                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+                            </div>
+
+
+                            <div class="grupo-formulario">
+
+                                <label for="password">
+                                    Contraseña
+                                </label>
+
+                                <input type="password" id="password" name="password" placeholder="Mínimo 6 caracteres"
+                                    minlength="6" required>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- OBJETIVO -->
+
+                        <div class="fila-formulario">
+
+
+                            <div class="grupo-formulario">
+
+                                <label for="objetivo">
+                                    Objetivo
+                                </label>
+
+                                <select id="objetivo" name="objetivo" required>
+
+                                    <option value="" selected disabled>
+                                        Selecciona una opción
+                                    </option>
+
+                                    <option value="alimentacion">
+                                        Mejorar mi alimentación
+                                    </option>
+
+                                    <option value="peso">
+                                        Mantener un peso saludable
+                                    </option>
+
+                                    <option value="habitos">
+                                        Crear hábitos saludables
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="grupo-formulario">
+
+                                <label for="tiempo">
+                                    Tiempo para cocinar
+                                </label>
+
+                                <select id="tiempo" name="tiempo" required>
+
+                                    <option value="" selected disabled>
+                                        Selecciona una opción
+                                    </option>
+
+                                    <option value="15">
+                                        15 minutos o menos
+                                    </option>
+
+                                    <option value="30">
+                                        Hasta 30 minutos
+                                    </option>
+
+                                    <option value="60">
+                                        Más de 30 minutos
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="grupo-formulario">
+
+                                <label for="presupuesto">
+                                    Presupuesto mensual
+                                </label>
+
+                                <select id="presupuesto" name="presupuesto" required>
+
+                                    <option value="" selected disabled>
+                                        Selecciona una opción
+                                    </option>
+
+                                    <option value="0-10">
+                                        S/ 0 - 10
+                                    </option>
+
+                                    <option value="11-20">
+                                        S/ 11 - 20
+                                    </option>
+
+                                    <option value="21+">
+                                        S/ 21 a más
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                             PREFERENCIAS DE ALIMENTACIÓN
+                        ================================================== -->
+
+                        <div class="grupo-preferencias">
+
+
+                            <div class="cabecera-preferencias">
+
+                                <h3>
+                                    Preferencias de alimentación
+                                </h3>
+
+                                <p>
+                                    Cuéntanos qué alimentos te gustan
+                                    para recomendarte recetas.
+                                </p>
+
+                            </div>
+
+
+
+                            <!-- ME GUSTAN -->
+
+                            <div class="preferencias-bloque">
+
+                                <h4>
+                                    Me gustan
+                                </h4>
+
+
+                                <div class="opciones-checkbox">
+
+
+                                    <label>
+
+                                        <input type="checkbox" name="preferencias" value="pollo">
+
+                                        Pollo
+
+                                    </label>
+
+
+                                    <label>
+
+                                        <input type="checkbox" name="preferencias" value="pescado">
+
+                                        Pescado
+
+                                    </label>
+
+
+                                    <label>
+
+                                        <input type="checkbox" name="preferencias" value="verduras">
+
+                                        🥗 Verduras
+
+                                    </label>
+
+
+                                    <label>
+
+                                        <input type="checkbox" name="preferencias" value="frutas">
+
+                                        🍎 Frutas
+
+                                    </label>
+
+
+                                    <label>
+
+                                        <input type="checkbox" name="preferencias" value="legumbres">
+
+                                        Legumbres
+
+                                    </label>
+
+
+                                    <label>
+
+                                        <input type="checkbox" name="preferencias" value="huevos">
+
+                                        🥚 Huevos
+
+                                    </label>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- EVITAR -->
+
+                            <div class="preferencias-bloque">
+
+                                <h4>
+                                    Prefiero evitar
+                                </h4>
+
+
+                                <div class="opciones-checkbox">
+
+
+                                    <label>
+
+                                        <input type="checkbox" name="evitar" value="res">
+
+                                        Carne de res
+
+                                    </label>
+
+
+                                    <label>
+
+                                        <input type="checkbox" name="evitar" value="mariscos">
+
+                                        Mariscos
+
+                                    </label>
+
+
+                                    <label>
+
+                                        <input type="checkbox" name="evitar" value="lacteos">
+
+                                        Lácteos
+
+                                    </label>
+
+
+                                    <label>
+
+                                        <input type="checkbox" name="evitar" value="procesados">
+
+                                        Procesados
+
+                                    </label>
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- BOTONES -->
+
+                        <div class="botones-formulario">
+
+
+                            <button id="btn-volver-perfil" type="button" class="btn-secundario">
+                                ← Volver
+                            </button>
+
+
+                            <button id="btn-crear-perfil" type="submit" class="btn-principal">
+                                Crear mi perfil
+                            </button>
+
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             LOGIN
+        ================================================== -->
+
+        <section id="pantalla-login" class="pantalla">
+
+            <div class="contenedor-web pantalla-centrada">
+
+
+                <div class="formulario-login">
+
+
+                    <div class="avatar-formulario">
+                        👨🏻
+                    </div>
+
+
+                    <div class="pagina-cabecera">
+
+                        <span class="mini-etiqueta">
+                            🌿 Healthy food
+                        </span>
+
+                        <h1>
+                            Bienvenido de nuevo
+                        </h1>
+
+                        <p>
+                            Inicia sesión para continuar.
+                        </p>
+
+                    </div>
+
+
+                    <form id="formulario-login">
+
+
+                        <div class="grupo-formulario">
+
+                            <label for="email-login">
+                                Correo electrónico
+                            </label>
+
+                            <input type="email" id="email-login" name="email-login" placeholder="ejemplo@correo.com"
+                                required>
+
+                        </div>
+
+
+                        <div class="grupo-formulario">
+
+                            <label for="password-login">
+                                Contraseña
+                            </label>
+
+                            <input type="password" id="password-login" name="password-login"
+                                placeholder="Ingresa tu contraseña" required>
+
+                        </div>
+
+
+                        <p id="mensaje-login" class="mensaje"></p>
+
+
+                        <button type="submit" class="btn-principal btn-completo">
+                            Iniciar sesión
+                        </button>
+
+
+                    </form>
+
+
+                    <div class="login-registro">
+
+                        <p>
+                            ¿Aún no tienes un perfil?
+                        </p>
+
+                        <button id="btn-ir-registro" type="button" class="btn-link">
+                            Crear mi perfil
+                        </button>
+
+                    </div>
+
+
+                    <button id="btn-volver-login" type="button" class="btn-secundario btn-completo">
+                        ← Volver al inicio
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RECETAS
+        ================================================== -->
+
+        <section id="pantalla-recetas" class="pantalla">
+
+            <div class="contenedor-web">
+
+
+                <div class="pagina-cabecera">
+
+                    <span class="mini-etiqueta">
+                        🍽️ Healthy food
+                    </span>
+
+                    <h1>
+                        Recetas saludables
+                    </h1>
+
+                    <p>
+                        Encuentra opciones deliciosas
+                        para cada momento del día.
+                    </p>
+
+                </div>
+
+
+
+                <!-- BUSCADOR -->
+
+                <div class="buscador-contenedor">
+
+                    <span class="icono-buscador">
+                        🔎
+                    </span>
+
+                    <input type="search" id="buscador-recetas" placeholder="Buscar recetas...">
+
+                </div>
+
+
+
+                <!-- FILTROS -->
+
+                <div class="filtros-recetas">
+
+
+                    <button type="button" class="filtro-receta activo" data-filtro="todas">
+                        Todas
+                    </button>
+
+
+                    <button type="button" class="filtro-receta" data-filtro="15">
+                        ⚡ 15 min o menos
+                    </button>
+
+
+                    <button type="button" class="filtro-receta" data-filtro="30">
+                        ⏱️ Hasta 30 min
+                    </button>
+
+
+                    <button type="button" class="filtro-receta" data-filtro="economicas">
+                        💰 Económicas
+                    </button>
+
+
+                    <button type="button" class="filtro-receta" data-filtro="desayunos">
+                        🌅 Desayunos
+                    </button>
+
+
+                    <button type="button" class="filtro-receta" data-filtro="almuerzos">
+                        🍽️ Almuerzos
+                    </button>
+
+
+                    <button type="button" class="filtro-receta" data-filtro="cenas">
+                        🌙 Cenas
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- GRID -->
+
+                <div id="grid-recetas" class="grid-recetas"></div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DETALLE RECETA
+        ================================================== -->
+
+        <section id="pantalla-detalle-receta" class="pantalla">
+
+            <div class="contenedor-web">
+
+
+                <button id="btn-volver-recetas" type="button" class="btn-volver">
+                    ← Volver a recetas
+                </button>
+
+
+                <div class="detalle-receta">
+
+
+                    <div class="detalle-imagen-contenedor">
+
+                        <img id="detalle-imagen" src="" alt="">
+
+                    </div>
+
+
+                    <div class="detalle-contenido">
+
+
+                        <span id="detalle-categoria" class="categoria-receta"></span>
+
+
+                        <h1 id="detalle-nombre"></h1>
+
+
+                        <div class="detalle-datos">
+
+
+                            <span id="detalle-tiempo">
+                                ⏱️
+                            </span>
+
+
+                            <span id="detalle-precio">
+                                💰
+                            </span>
+
+
+                            <span id="detalle-dificultad">
+                            </span>
+
+
+                        </div>
+
+
+                        <button id="btn-favorito" type="button" class="btn-favorito-detalle">
+                            ♡ Agregar a favoritos
+                        </button>
+
+
+                        <div class="detalle-seccion">
+
+                            <h2>
+                                Ingredientes
+                            </h2>
+
+                            <ul id="detalle-ingredientes"></ul>
+
+                        </div>
+
+
+                        <div class="detalle-seccion">
+
+                            <h2>
+                                Preparación
+                            </h2>
+
+                            <ol id="detalle-preparacion"></ol>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RETOS
+        ================================================== -->
+
+        <section id="pantalla-retos" class="pantalla">
+
+            <div class="contenedor-web">
+
+
+                <div class="pagina-cabecera">
+
+                    <span class="mini-etiqueta">
+                        🏆 Healthy food
+                    </span>
+
+                    <h1>
+                        Retos saludables
+                    </h1>
+
+                    <p>
+                        Pequeños objetivos que puedes
+                        cumplir durante el día.
+                    </p>
+
+                </div>
+
+
+                <div id="grid-retos" class="grid-retos"></div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROGRESO
+        ================================================== -->
+
+        <section id="pantalla-progreso" class="pantalla">
+
+            <div class="contenedor-web">
+
+
+                <div class="pagina-cabecera">
+
+                    <span class="mini-etiqueta">
+                        📊 Healthy food
+                    </span>
+
+                    <h1>
+                        Mi progreso
+                    </h1>
+
+                    <p>
+                        Revisa tus hábitos y observa
+                        tus avances.
+                    </p>
+
+                </div>
+
+
+                <div class="progreso-contenedor">
+
+
+                    <div class="tarjeta-progreso">
+
+                        <span class="icono-progreso">
+                            🥗
+                        </span>
+
+                        <h3>
+                            Alimentación saludable
+                        </h3>
+
+                        <div class="barra-progreso">
+
+                            <div class="barra-progreso-valor" style="width: 70%;"></div>
+
+                        </div>
+
+                        <strong>
+                            70%
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="tarjeta-progreso">
+
+                        <span class="icono-progreso">
+                            💧
+                        </span>
+
+                        <h3>
+                            Hidratación
+                        </h3>
+
+                        <div class="barra-progreso">
+
+                            <div class="barra-progreso-valor" style="width: 60%;"></div>
+
+                        </div>
+
+                        <strong>
+                            60%
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="tarjeta-progreso">
+
+                        <span class="icono-progreso">
+                            🚶
+                        </span>
+
+                        <h3>
+                            Actividad física
+                        </h3>
+
+                        <div class="barra-progreso">
+
+                            <div class="barra-progreso-valor" style="width: 50%;"></div>
+
+                        </div>
+
+                        <strong>
+                            50%
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="tarjeta-progreso">
+
+                        <span class="icono-progreso">
+                            😴
+                        </span>
+
+                        <h3>
+                            Descanso
+                        </h3>
+
+                        <div class="barra-progreso">
+
+                            <div class="barra-progreso-valor" style="width: 80%;"></div>
+
+                        </div>
+
+                        <strong>
+                            80%
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MÁS
+        ================================================== -->
+
+        <section id="pantalla-mas" class="pantalla">
+
+            <div class="contenedor-web">
+
+
+                <div class="pagina-cabecera">
+
+                    <span class="mini-etiqueta">
+                        ⚙️ Healthy food
+                    </span>
+
+                    <h1>
+                        Más opciones
+                    </h1>
+
+                    <p>
+                        Administra tu perfil y tus
+                        preferencias.
+                    </p>
+
+                </div>
+
+
+
+                <div class="grid-mas">
+
+
+                    <!-- PERFIL -->
+
+                    <button id="btn-mi-perfil" type="button" class="tarjeta-mas">
+                        <span class="icono-mas">👤</span>
+                        <div>
+                            <h3>Mi perfil</h3>
+                            <p>Consulta y actualiza tus datos personales.</p>
+                        </div>
+                    </button>
+
+
+                    <!-- FAVORITOS -->
+
+                    <button type="button" class="tarjeta-mas">
+
+                        <span class="icono-mas">
+                            ❤️
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Favoritos
+                            </h3>
+
+                            <p>
+                                Revisa tus recetas favoritas.
+                            </p>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- PREFERENCIAS -->
+
+                    <button id="btn-preferencias" type="button" class="tarjeta-mas">
+
+                        <span class="icono-mas">
+                            🥗
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Preferencias
+                            </h3>
+
+                            <p>
+                                Actualiza los alimentos
+                                que te gustan o evitas.
+                            </p>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- CONFIGURACIÓN -->
+
+                    <button type="button" class="tarjeta-mas">
+
+                        <span class="icono-mas">
+                            ⚙️
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Configuración
+                            </h3>
+
+                            <p>
+                                Personaliza tu experiencia.
+                            </p>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- AYUDA -->
+
+                    <button type="button" class="tarjeta-mas">
+
+                        <span class="icono-mas">
+                            ❓
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Ayuda
+                            </h3>
+
+                            <p>
+                                Encuentra respuestas
+                                a tus preguntas.
+                            </p>
+
+                        </div>
+
+                    </button>
+
+
+                </div>
+
+                <!-- =================================================
+                     FORMULARIO DE perfil
+                ================================================== -->
+
+                <div id="contenedor-mi-perfil" class="formulario-preferencias-contenedor" style="display: none;">
+                    <div class="pagina-cabecera">
+                        <span class="mini-etiqueta">👤 Mi perfil</span>
+                        <h2>Mis datos personales</h2>
+                        <p>Actualiza la información de tu perfil cuando lo necesites.</p>
+                    </div>
+
+                    <form id="formulario-mi-perfil" class="formulario-contenedor">
+
+                        <div class="avatar-formulario">
+                            👨🏻
+                        </div>
+
+                        <div class="fila-formulario">
+
+                            <div class="grupo-formulario">
+                                <label for="perfil-nombre">Nombre</label>
+                                <input type="text" id="perfil-nombre" required>
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <label for="perfil-edad">Edad</label>
+                                <input type="number" id="perfil-edad" min="1" max="120" required>
+                            </div>
+
+                        </div>
+
+                        <div class="fila-formulario">
+
+                            <div class="grupo-formulario">
+                                <label for="perfil-peso">Peso (kg)</label>
+                                <input type="number" id="perfil-peso" min="1" step="0.1" required>
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <label for="perfil-altura">Altura (cm)</label>
+                                <input type="number" id="perfil-altura" min="1" step="0.1" required>
+                            </div>
+
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="perfil-email">Correo electrónico</label>
+                            <input type="email" id="perfil-email" required>
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="perfil-objetivo">Objetivo</label>
+
+                            <select id="perfil-objetivo" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="bajar-peso">Bajar de peso</option>
+                                <option value="mantener-peso">Mantener mi peso</option>
+                                <option value="ganar-peso">Ganar peso</option>
+                                <option value="comer-saludable">Comer más saludable</option>
+                            </select>
+                        </div>
+
+                        <div class="fila-formulario">
+
+                            <div class="grupo-formulario">
+                                <label for="perfil-tiempo">Tiempo para cocinar</label>
+
+                                <select id="perfil-tiempo" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="15">15 minutos o menos</option>
+                                    <option value="30">Hasta 30 minutos</option>
+                                    <option value="60">Más de 30 minutos</option>
+                                </select>
+                            </div>
+
+                            <div class="grupo-formulario">
+                                <label for="perfil-presupuesto">Presupuesto mensual</label>
+
+                                <select id="perfil-presupuesto" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="0-10">S/ 0 - 10</option>
+                                    <option value="11-20">S/ 11 - 20</option>
+                                    <option value="21+">S/ 21 a más</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="botones-formulario">
+
+                            <button type="button" id="btn-cerrar-mi-perfil" class="btn-secundario">
+                                ← Volver
+                            </button>
+
+                            <button type="submit" class="btn-principal">
+                                Guardar cambios
+                            </button>
+
+                        </div>
+
+                        <p id="mensaje-mi-perfil" class="mensaje"></p>
+
+                    </form>
+                </div>
+
+                <!-- =================================================
+                     FORMULARIO DE PREFERENCIAS
+                ================================================== -->
+
+                <div class="formulario-preferencias-contenedor">
+
+                    <form id="formulario-preferencias" style="display: none;">
+
+
+                        <div class="pagina-cabecera">
+
+                            <span class="mini-etiqueta">
+                                🥗 Personalización
+                            </span>
+
+                            <h2>
+                                Mis preferencias
+                            </h2>
+
+                            <p>
+                                Puedes actualizar tus preferencias
+                                cuando quieras.
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- ME GUSTAN -->
+
+                        <div class="preferencias-bloque">
+
+                            <h3>
+                                Me gustan
+                            </h3>
+
+
+                            <div class="opciones-checkbox">
+
+
+                                <label>
+
+                                    <input type="checkbox" name="preferencias" value="pollo">
+
+                                    Pollo
+
+                                </label>
+
+
+                                <label>
+
+                                    <input type="checkbox" name="preferencias" value="pescado">
+
+                                    Pescado
+
+                                </label>
+
+
+                                <label>
+
+                                    <input type="checkbox" name="preferencias" value="verduras">
+
+                                    🥗 Verduras
+
+                                </label>
+
+
+                                <label>
+
+                                    <input type="checkbox" name="preferencias" value="frutas">
+
+                                    🍎 Frutas
+
+                                </label>
+
+
+                                <label>
+
+                                    <input type="checkbox" name="preferencias" value="legumbres">
+
+                                    Legumbres
+
+                                </label>
+
+
+                                <label>
+
+                                    <input type="checkbox" name="preferencias" value="huevos">
+
+                                    🥚 Huevos
+
+                                </label>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- EVITAR -->
+
+                        <div class="preferencias-bloque">
+
+                            <h3>
+                                Prefiero evitar
+                            </h3>
+
+
+                            <div class="opciones-checkbox">
+
+
+                                <label>
+
+                                    <input type="checkbox" name="evitar" value="res">
+
+                                    Carne de res
+
+                                </label>
+
+
+                                <label>
+
+                                    <input type="checkbox" name="evitar" value="mariscos">
+
+                                    Mariscos
+
+                                </label>
+
+
+                                <label>
+
+                                    <input type="checkbox" name="evitar" value="lacteos">
+
+                                    Lácteos
+
+                                </label>
+
+
+                                <label>
+
+                                    <input type="checkbox" name="evitar" value="procesados">
+
+                                    Procesados
+
+                                </label>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <button id="btn-guardar-preferencias" type="submit" class="btn-principal">
+                            Guardar preferencias
+                        </button>
+
+
+                        <p id="mensaje-preferencias" class="mensaje"></p>
+
+
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="contenedor-web">
+
+            <div class="footer-contenido">
+
+
+                <div>
+
+                    <strong>
+                        🌿 Healthy food
+                    </strong>
+
+                    <p>
+                        Vida Sana, Futuro Seguro
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <p>
+                        Proyecto académico
+                    </p>
+
+                    <p>
+                        © 2026 NutriGo
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/datos.js"></script>
+
+    <script src="js/recetas.js"></script>
+
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
