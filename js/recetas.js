@@ -1,10 +1,6 @@
 /* =========================================================
-   NUTRIGO - BASE DE DATOS FICTICIA DE RECETAS
-   =========================================================
-   
-   Los valores nutricionales son estimados por porción.
-   Pueden variar según los ingredientes, marcas, cantidades
-   y métodos de preparación utilizados.
+   NUTRIGO - RECETAS SALUDABLES
+   17 almuerzos con imágenes específicas
    ========================================================= */
 
 const recetas = [
@@ -42,17 +38,15 @@ const recetas = [
             "Agrega la zanahoria, el brócoli y el pimiento.",
             "Sirve el arroz como base y coloca encima el pollo y las verduras."
         ],
-
-        imagen: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://www.arise-app.com/images/dishes/es/arroz-con-pollo-y-vegetales-1kj31v.webp",
 
         tags: ["pollo", "verduras", "almuerzo", "saludable"]
     },
 
-
     {
         id: 2,
         nombre: "Ensalada fresca de pollo",
-        categoria: "Ensalada",
+        categoria: "Almuerzo",
         tiempo: 15,
         precio: 8,
         dificultad: "Fácil",
@@ -83,12 +77,10 @@ const recetas = [
             "Mezcla todos los ingredientes.",
             "Añade limón, sal y pimienta al gusto."
         ],
+        imagen: "https://media.airedesantafe.com.ar/p/02785dca138c8a4bff0d72ac9a80228c/adjuntos/268/imagenes/003/801/0003801283/1200x0/smart/como-hacer-la-mejor-ensalada-pollo-saludable-la-receta-perfecta-el-verano.png",
 
-        imagen: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["pollo", "verduras", "ensalada", "rápido"]
+        tags: ["pollo", "verduras", "rápido", "almuerzo"]
     },
-
 
     {
         id: 3,
@@ -124,17 +116,15 @@ const recetas = [
             "Agrega limón, ajo y pimienta.",
             "Hornea durante aproximadamente 25 minutos."
         ],
-
-        imagen: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://avatars.mds.yandex.net/get-vertis-journal/4466156/Ryba_s_ovoshchami_v_duhovke.jpg_1775739156003/1600x1600",
 
         tags: ["pescado", "verduras", "almuerzo"]
     },
 
-
     {
         id: 4,
         nombre: "Tortilla de verduras",
-        categoria: "Desayuno",
+        categoria: "Almuerzo",
         tiempo: 15,
         precio: 6,
         dificultad: "Fácil",
@@ -164,51 +154,10 @@ const recetas = [
             "Calienta una sartén con poco aceite.",
             "Cocina la tortilla por ambos lados."
         ],
+        imagen: "https://www.elconfidencialdigital.com/asset/thumbnail%2C1280%2C720%2Ccenter%2Ccenter/media/elconfidencialdigital/images/2026/02/27/2026022717544037716.jpg",
 
-        imagen: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["huevos", "verduras", "desayuno", "rápido"]
+        tags: ["huevos", "verduras", "rápido", "almuerzo"]
     },
-
-
-    {
-        id: 5,
-        nombre: "Avena con plátano y frutas",
-        categoria: "Desayuno",
-        tiempo: 10,
-        precio: 5,
-        dificultad: "Muy fácil",
-
-        nutricion: {
-            porcion: "1 porción",
-            calorias: 300,
-            proteinas: 7,
-            carbohidratos: 58,
-            grasas: 6,
-            fibra: 8
-        },
-
-        ingredientes: [
-            "1/2 taza de avena",
-            "1 plátano",
-            "1/2 taza de fresas",
-            "1 taza de agua o leche",
-            "Canela al gusto"
-        ],
-
-        preparacion: [
-            "Coloca la avena y el líquido en una olla.",
-            "Cocina durante unos minutos.",
-            "Corta el plátano y las fresas.",
-            "Sirve la avena.",
-            "Agrega las frutas y un poco de canela."
-        ],
-
-        imagen: "https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["frutas", "desayuno", "rápido", "avena"]
-    },
-
 
     {
         id: 6,
@@ -244,17 +193,15 @@ const recetas = [
             "Agrega la zanahoria y las lentejas.",
             "Cocina unos minutos más y condimenta."
         ],
-
-        imagen: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/lentejas.jpg",
 
         tags: ["legumbres", "verduras", "almuerzo", "económico"]
     },
 
-
     {
         id: 7,
         nombre: "Wrap de pollo y verduras",
-        categoria: "Cena",
+        categoria: "Almuerzo",
         tiempo: 15,
         precio: 9,
         dificultad: "Fácil",
@@ -284,12 +231,9 @@ const recetas = [
             "Añade el pollo y la palta.",
             "Enrolla la tortilla y sirve."
         ],
-
-        imagen: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["pollo", "verduras", "cena", "rápido"]
+        imagen: "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/wrap_with_chicken_and_vegetables.jpg",
+        tags: ["pollo", "verduras", "rápido", "almuerzo"]
     },
-
 
     {
         id: 8,
@@ -324,17 +268,15 @@ const recetas = [
             "Incorpora el arroz.",
             "Agrega los huevos y mezcla hasta que estén cocidos."
         ],
+        imagen: "https://i0.wp.com/natirecetascaseras.com/wp-content/uploads/2025/05/gemini_generated_image_f3upxrf3upxrf3up.jpeg?resize=750%2C750&ssl=1",
 
-        imagen: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["huevos", "verduras", "económico"]
+        tags: ["huevos", "verduras", "económico", "almuerzo"]
     },
-
 
     {
         id: 9,
         nombre: "Ensalada de garbanzos",
-        categoria: "Ensalada",
+        categoria: "Almuerzo",
         tiempo: 15,
         precio: 7,
         dificultad: "Muy fácil",
@@ -364,17 +306,15 @@ const recetas = [
             "Añade limón y perejil.",
             "Mezcla todos los ingredientes."
         ],
+        imagen: "https://simplerecetas.com/assets/images/1735311632680-8ym75l2w.webp?w=1024",
 
-        imagen: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["legumbres", "verduras", "ensalada", "económico"]
+        tags: ["legumbres", "verduras", "económico", "almuerzo"]
     },
-
 
     {
         id: 10,
         nombre: "Sopa de verduras",
-        categoria: "Cena",
+        categoria: "Almuerzo",
         tiempo: 30,
         precio: 6,
         dificultad: "Fácil",
@@ -405,12 +345,10 @@ const recetas = [
             "Cocina hasta que estén suaves.",
             "Condimenta al gusto."
         ],
+        imagen: "https://tn.com.ar/resizer/v2/el-caldo-de-verduras-de-jordi-cruz-es-ideal-para-combatir-la-hinchazon-imagen-ilustrativa-generada-con-ia-XTA6JDO7BBHKFJ3WE43HL3IHE4.png?auth=f663b0d6232c020af81749891c06f5ddc9933891fa017794b2d21b572ed8ec92&width=1440",
 
-        imagen: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["verduras", "cena", "económico"]
+        tags: ["verduras", "económico", "almuerzo"]
     },
-
 
     {
         id: 11,
@@ -445,12 +383,10 @@ const recetas = [
             "Mezcla la pasta con la salsa.",
             "Agrega el pollo y orégano."
         ],
-
-        imagen: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://www.hola.com/horizon/landscape/b8b921075bfa-pasta-integral-adobe-t.jpg",
 
         tags: ["pollo", "almuerzo", "pasta"]
     },
-
 
     {
         id: 12,
@@ -485,54 +421,15 @@ const recetas = [
             "Prepara una ensalada con lechuga y tomate.",
             "Sirve el pollo acompañado de la ensalada."
         ],
-
-        imagen: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/pollo_a_la_plancha.jpg",
 
         tags: ["pollo", "verduras", "almuerzo"]
     },
 
-
-    {
-        id: 13,
-        nombre: "Batido de frutas",
-        categoria: "Bebida",
-        tiempo: 5,
-        precio: 5,
-        dificultad: "Muy fácil",
-
-        nutricion: {
-            porcion: "1 vaso",
-            calorias: 180,
-            proteinas: 2,
-            carbohidratos: 43,
-            grasas: 1,
-            fibra: 5
-        },
-
-        ingredientes: [
-            "1 plátano",
-            "1/2 taza de fresas",
-            "1/2 taza de papaya",
-            "1 taza de agua"
-        ],
-
-        preparacion: [
-            "Lava y corta las frutas.",
-            "Coloca todos los ingredientes en la licuadora.",
-            "Licúa hasta obtener una mezcla homogénea.",
-            "Sirve inmediatamente."
-        ],
-
-        imagen: "https://images.unsplash.com/photo-1502741224143-90386d7f8c82?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["frutas", "bebida", "rápido"]
-    },
-
-
     {
         id: 14,
         nombre: "Tostadas con palta y huevo",
-        categoria: "Desayuno",
+        categoria: "Almuerzo",
         tiempo: 10,
         precio: 7,
         dificultad: "Muy fácil",
@@ -561,12 +458,10 @@ const recetas = [
             "Coloca la palta sobre las tostadas.",
             "Agrega el huevo y unas rodajas de tomate."
         ],
+        imagen: "https://www.stwhh.de/fileadmin/_processed_/e/e/csm_Mensa_PhilTurm_Fruehstueck02_06527790cb.jpg",
 
-        imagen: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["huevos", "desayuno", "rápido"]
+        tags: ["huevos", "rápido", "almuerzo"]
     },
-
 
     {
         id: 15,
@@ -601,17 +496,15 @@ const recetas = [
             "Saltea las verduras.",
             "Mezcla la quinua con las verduras."
         ],
-
-        imagen: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://vidasanarecetas.com/quinoa-verduras-salteadas-coloridas.jpg",
 
         tags: ["verduras", "almuerzo", "quinua"]
     },
 
-
     {
         id: 16,
         nombre: "Pescado a la plancha",
-        categoria: "Cena",
+        categoria: "Almuerzo",
         tiempo: 20,
         precio: 13,
         dificultad: "Fácil",
@@ -640,51 +533,10 @@ const recetas = [
             "Prepara una ensalada.",
             "Sirve el pescado acompañado de las verduras."
         ],
+        imagen: "https://www.arise-app.com/images/dishes/pt/peixe-grelhado-com-legumes-salteados-1irv99.webp",
 
-        imagen: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["pescado", "verduras", "cena"]
+        tags: ["pescado", "verduras", "almuerzo"]
     },
-
-
-    {
-        id: 17,
-        nombre: "Ensalada de frutas",
-        categoria: "Postre",
-        tiempo: 10,
-        precio: 6,
-        dificultad: "Muy fácil",
-
-        nutricion: {
-            porcion: "1 porción",
-            calorias: 190,
-            proteinas: 2,
-            carbohidratos: 46,
-            grasas: 1,
-            fibra: 7
-        },
-
-        ingredientes: [
-            "Plátano",
-            "Manzana",
-            "Fresas",
-            "Papaya",
-            "Mandarina"
-        ],
-
-        preparacion: [
-            "Lava todas las frutas.",
-            "Pela las que lo necesiten.",
-            "Corta las frutas en trozos.",
-            "Colócalas en un recipiente.",
-            "Mezcla suavemente y sirve."
-        ],
-
-        imagen: "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["frutas", "postre", "rápido"]
-    },
-
 
     {
         id: 18,
@@ -720,17 +572,15 @@ const recetas = [
             "Incorpora los garbanzos.",
             "Cocina hasta que las verduras estén listas."
         ],
-
-        imagen: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+        imagen: "https://i.blogs.es/baab25/estofado/1200_900.jpeg",
 
         tags: ["legumbres", "verduras", "almuerzo", "económico"]
     },
 
-
     {
         id: 19,
         nombre: "Sándwich de pollo saludable",
-        categoria: "Cena",
+        categoria: "Almuerzo",
         tiempo: 15,
         precio: 8,
         dificultad: "Muy fácil",
@@ -759,17 +609,15 @@ const recetas = [
             "Añade el pollo.",
             "Cubre con la otra rebanada."
         ],
+        imagen: "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/chicken_and_avacodo_sandwich.jpg",
 
-        imagen: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-
-        tags: ["pollo", "verduras", "cena", "rápido"]
+        tags: ["pollo", "verduras", "rápido", "almuerzo"]
     },
-
 
     {
         id: 20,
         nombre: "Ensalada de huevo y verduras",
-        categoria: "Cena",
+        categoria: "Almuerzo",
         tiempo: 12,
         precio: 6,
         dificultad: "Muy fácil",
@@ -799,70 +647,178 @@ const recetas = [
             "Mezcla todos los ingredientes.",
             "Agrega limón al gusto."
         ],
+        imagen: "https://www.makra-kuchnie-swiata.com/media/recipes/hiszpanska-salatka-z-pomidorow-ogorka-i-papryki-z-jajkiem/hiszpanska-salatka-z-pomidorow-ogorka-i-papryki-z-jajkiem-e73d573b.webp",
 
-        imagen: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+        tags: ["huevos", "verduras", "rápido", "almuerzo"]
+    },
 
-        tags: ["huevos", "verduras", "cena", "rápido"]
-    }
+    {
+        id: 21,
+        nombre: "Ensalada de quinua con pollo",
+        categoria: "Almuerzo",
+        tiempo: 25,
+        precio: 10,
+        dificultad: "Fácil",
+        nutricion: { porcion: "1 porción", calorias: 410, proteinas: 29, carbohidratos: 35, grasas: 14, fibra: 6 },
+        ingredientes: ["Pechuga de pollo", "Quinua cocida", "Tomate cherry", "Pepino", "Cebolla morada", "Palta", "Limón", "Perejil"],
+        preparacion: ["Cocina la quinua y deja enfriar.", "Cocina el pollo a la plancha y córtalo en tiras.", "Corta las verduras y la palta.", "Mezcla la quinua con las verduras.", "Agrega el pollo, limón y perejil."],
+        imagen: "https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/food_pics_v2/medium/chicken_qunoa_salad.jpg",
+        tags: ["pollo", "quinua", "verduras", "almuerzo"]
+    },
+    {
+        id: 22,
+        nombre: "Pollo al curry con arroz integral",
+        categoria: "Almuerzo",
+        tiempo: 30,
+        precio: 10,
+        dificultad: "Fácil",
+        nutricion: { porcion: "1 porción", calorias: 430, proteinas: 36, carbohidratos: 43, grasas: 13, fibra: 6 },
+        ingredientes: ["Pechuga de pollo", "Arroz integral", "Pimiento rojo", "Pimiento amarillo", "Cebolla", "Curry", "Cilantro"],
+        preparacion: ["Cocina el arroz integral.", "Corta el pollo y las verduras.", "Dora el pollo con poco aceite.", "Agrega cebolla, pimientos y curry.", "Sirve con el arroz integral y cilantro."],
+        imagen: "https://www.arise-app.com/images/dishes/en/chicken-curry-with-brown-rice-and-peppers-zjyhxe.webp",
+        tags: ["pollo", "arroz", "verduras", "almuerzo"]
+    },
+    {
+        id: 23,
+        nombre: "Pescado con quinua y verduras",
+        categoria: "Almuerzo",
+        tiempo: 25,
+        precio: 12,
+        dificultad: "Fácil",
+        nutricion: { porcion: "1 porción", calorias: 360, proteinas: 30, carbohidratos: 31, grasas: 11, fibra: 6 },
+        ingredientes: ["Filete de pescado", "Quinua cocida", "Zanahoria", "Zapallito italiano", "Espárragos", "Tomate", "Limón"],
+        preparacion: ["Cocina la quinua.", "Corta las verduras y saltéalas ligeramente.", "Cocina el pescado a la plancha.", "Coloca la quinua como base.", "Agrega el pescado y las verduras con limón."],
+        imagen: "https://cdn.avena.io/avena-recipes-v2/2025/08/dall-e-1754928975860.jpeg",
+        tags: ["pescado", "quinua", "verduras", "almuerzo"]
+    },
+    {
+        id: 24,
+        nombre: "Causa de atún saludable",
+        categoria: "Almuerzo",
+        tiempo: 30,
+        precio: 9,
+        dificultad: "Media",
+        nutricion: { porcion: "1 porción", calorias: 390, proteinas: 22, carbohidratos: 47, grasas: 13, fibra: 5 },
+        ingredientes: ["Papa amarilla", "Atún en agua", "Palta", "Tomate", "Limón", "Ají amarillo", "Cebolla morada"],
+        preparacion: ["Cocina y prensa la papa.", "Mezcla la papa con limón y ají amarillo.", "Prepara el relleno con atún y verduras.", "Arma capas de papa y relleno.", "Decora con palta y tomate."],
+        imagen: "https://s3.us-east-2.amazonaws.com/pfimg1/012/2a/9c/2a9c0037f09fdfc67cfcb2b9caf318b1_500x500.jpg",
+        tags: ["atún", "papa", "palta", "almuerzo"]
+    },
+    {
+        id: 25,
+        nombre: "Tallarines verdes con pollo",
+        categoria: "Almuerzo",
+        tiempo: 30,
+        precio: 10,
+        dificultad: "Media",
+        nutricion: { porcion: "1 porción", calorias: 480, proteinas: 34, carbohidratos: 52, grasas: 15, fibra: 6 },
+        ingredientes: ["Tallarines integrales", "Pechuga de pollo", "Albahaca", "Espinaca", "Ajo", "Queso fresco", "Leche"],
+        preparacion: ["Cocina los tallarines integrales.", "Licúa albahaca, espinaca, ajo y un poco de leche.", "Calienta la salsa y agrega queso fresco.", "Cocina el pollo a la plancha.", "Mezcla los tallarines con la salsa y sirve con pollo."],
+        imagen: "https://i.pinimg.com/originals/c7/96/e0/c796e0926cbb04d2bf41dd151b32fec5.jpg",
+        tags: ["pollo", "pasta", "verduras", "almuerzo"]
+    },
+    {
+        id: 26,
+        nombre: "Locro de zapallo con arroz",
+        categoria: "Almuerzo",
+        tiempo: 35,
+        precio: 8,
+        dificultad: "Fácil",
+        nutricion: { porcion: "1 porción", calorias: 360, proteinas: 11, carbohidratos: 55, grasas: 11, fibra: 7 },
+        ingredientes: ["Zapallo macre", "Papa", "Choclo", "Arvejas", "Cebolla", "Ají amarillo", "Queso fresco", "Arroz"],
+        preparacion: ["Sofríe la cebolla con ajo y ají amarillo.", "Agrega zapallo, papa, choclo y un poco de agua.", "Cocina hasta que el zapallo esté suave.", "Añade arvejas y queso fresco.", "Sirve con una porción de arroz."],
+        imagen: "https://cocatambo.com/sites/default/files/plato-locro-zapallo.webp",
+        tags: ["zapallo", "verduras", "arroz", "almuerzo"]
+    },
+    {
+        id: 27,
+        nombre: "Frejoles con arroz y ensalada",
+        categoria: "Almuerzo",
+        tiempo: 40,
+        precio: 7,
+        dificultad: "Fácil",
+        nutricion: { porcion: "1 porción", calorias: 430, proteinas: 17, carbohidratos: 68, grasas: 9, fibra: 15 },
+        ingredientes: ["Frejoles cocidos", "Arroz integral", "Cebolla", "Tomate", "Pepino", "Zanahoria", "Limón"],
+        preparacion: ["Cocina los frejoles hasta que estén suaves.", "Prepara una porción de arroz integral.", "Corta tomate, pepino y zanahoria.", "Aliña la ensalada con limón.", "Sirve los frejoles con arroz y ensalada."],
+        imagen: "https://www.billyparisi.com/wp-content/uploads/2024/04/peruvian-beans-1.jpg",
+        tags: ["legumbres", "frejoles", "arroz", "verduras", "almuerzo"]
+    },
+    {
+        id: 28,
+        nombre: "Arroz integral con pollo y verduras",
+        categoria: "Almuerzo",
+        tiempo: 25,
+        precio: 9,
+        dificultad: "Fácil",
+        nutricion: { porcion: "1 porción", calorias: 420, proteinas: 35, carbohidratos: 45, grasas: 12, fibra: 7 },
+        ingredientes: ["Pechuga de pollo", "Arroz integral", "Brócoli", "Zanahoria", "Zapallito italiano", "Pimiento rojo"],
+        preparacion: ["Cocina el arroz integral.", "Corta el pollo y las verduras.", "Saltea el pollo con poco aceite.", "Agrega las verduras y cocina hasta que estén tiernas.", "Sirve junto al arroz integral."],
+        imagen: "https://www.arise-app.com/images/dishes/es/pollo-con-arroz-integral-y-verduras-salteadas-dcg7i5.webp",
+        tags: ["pollo", "arroz", "verduras", "almuerzo"]
+    },
+    {
+        id: 29,
+        nombre: "Papa rellena de pollo con ensalada",
+        categoria: "Almuerzo",
+        tiempo: 35,
+        precio: 9,
+        dificultad: "Media",
+        nutricion: { porcion: "1 porción", calorias: 400, proteinas: 27, carbohidratos: 48, grasas: 12, fibra: 6 },
+        ingredientes: ["Papa", "Pollo deshilachado", "Cebolla", "Zanahoria", "Lechuga", "Tomate", "Limón"],
+        preparacion: ["Cocina y prensa las papas.", "Prepara el pollo deshilachado con cebolla.", "Forma una papa rellena con el pollo.", "Cocina al horno o en sartén antiadherente con poco aceite.", "Sirve con ensalada fresca."],
+        imagen: "https://cdn7.kiwilimon.com/ss_secreto/2948/640x640/p_18567.jpg.jpg",
+        tags: ["pollo", "papa", "verduras", "almuerzo"]
+    },
+    {
+        id: 30,
+        nombre: "Seco de pollo con arroz y verduras",
+        categoria: "Almuerzo",
+        tiempo: 40,
+        precio: 11,
+        dificultad: "Media",
+        nutricion: { porcion: "1 porción", calorias: 470, proteinas: 32, carbohidratos: 55, grasas: 13, fibra: 6 },
+        ingredientes: ["Pollo", "Arroz", "Papa", "Zanahoria", "Culantro", "Ají amarillo", "Cebolla", "Arvejas"],
+        preparacion: ["Prepara el aderezo con cebolla, ajo, ají amarillo y culantro.", "Agrega el pollo y cocina hasta dorar ligeramente.", "Añade papa, zanahoria y arvejas con un poco de agua.", "Cocina hasta que el pollo y las verduras estén listos.", "Sirve con una porción moderada de arroz."],
+        imagen: "https://www.arise-app.com/images/dishes/es/seco-de-pollo-con-arroz-y-papas-1bcjcg.webp",
+        tags: ["pollo", "arroz", "verduras", "almuerzo"]
+    },
 ];
 
 
 /* =========================================================
-   FUNCIONES AUXILIARES
+   FUNCIONES DE RECETAS Y FAVORITOS
    ========================================================= */
 
 function obtenerRecetaPorId(id) {
-    return recetas.find(function (receta) {
-        return receta.id === Number(id);
-    });
+    return recetas.find(receta => Number(receta.id) === Number(id));
 }
-
 
 function obtenerFavoritos() {
-    const favoritosGuardados =
-        localStorage.getItem("nutrigoFavoritos");
-
-    if (!favoritosGuardados) {
+    try {
+        return JSON.parse(localStorage.getItem("nutrigoFavoritos")) || [];
+    } catch (error) {
         return [];
     }
-
-    return JSON.parse(favoritosGuardados);
 }
-
 
 function guardarFavoritos(favoritos) {
-    localStorage.setItem(
-        "nutrigoFavoritos",
-        JSON.stringify(favoritos)
-    );
+    localStorage.setItem("nutrigoFavoritos", JSON.stringify(favoritos));
 }
-
 
 function esFavorito(id) {
-    const favoritos = obtenerFavoritos();
-
-    return favoritos.includes(Number(id));
+    return obtenerFavoritos().includes(Number(id));
 }
 
-
 function alternarFavorito(id) {
-    id = Number(id);
-
+    const numeroId = Number(id);
     let favoritos = obtenerFavoritos();
 
-    if (favoritos.includes(id)) {
-
-        favoritos = favoritos.filter(function (favorito) {
-            return favorito !== id;
-        });
-
+    if (favoritos.includes(numeroId)) {
+        favoritos = favoritos.filter(favoritoId => favoritoId !== numeroId);
     } else {
-
-        favoritos.push(id);
-
+        favoritos.push(numeroId);
     }
 
     guardarFavoritos(favoritos);
-
-    return favoritos.includes(id);
+    return favoritos.includes(numeroId);
 }

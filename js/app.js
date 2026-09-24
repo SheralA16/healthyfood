@@ -389,6 +389,22 @@ function mostrarPantalla(pantalla) {
     );
 
 
+    // En las pantallas de registro e inicio de sesión
+    // ocultamos "Inicio" del menú para evitar navegación duplicada.
+    const esPantallaAutenticacion =
+        pantalla === pantallaPerfil ||
+        pantalla === pantallaLogin;
+
+    if (navInicio) {
+
+        navInicio.style.display =
+            esPantallaAutenticacion
+                ? "none"
+                : "";
+
+    }
+
+
     window.scrollTo({
 
         top: 0,
@@ -2138,9 +2154,7 @@ function renderizarRecetas() {
     );
 
 
-    switch (
-    filtroActivo
-    ) {
+    switch (filtroActivo) {
 
         case "15":
 
@@ -2190,27 +2204,6 @@ function renderizarRecetas() {
             break;
 
 
-        case "desayunos":
-
-            recetasFiltradas =
-                recetasFiltradas.filter(
-                    function (receta) {
-
-                        return (
-                            receta.categoria &&
-                            receta.categoria
-                                .toLowerCase()
-                                .includes(
-                                    "desay"
-                                )
-                        );
-
-                    }
-                );
-
-            break;
-
-
         case "almuerzos":
 
             recetasFiltradas =
@@ -2231,29 +2224,7 @@ function renderizarRecetas() {
 
             break;
 
-
-        case "cenas":
-
-            recetasFiltradas =
-                recetasFiltradas.filter(
-                    function (receta) {
-
-                        return (
-                            receta.categoria &&
-                            receta.categoria
-                                .toLowerCase()
-                                .includes(
-                                    "cena"
-                                )
-                        );
-
-                    }
-                );
-
-            break;
-
     }
-
 
     gridRecetas.innerHTML =
         "";
